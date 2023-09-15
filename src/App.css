@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: rgb(213, 236, 255);
+}
+.container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  font-family: 'Calibri';
+}
+
+.tweet.container {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-auto-rows: 20px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 5px rgb(215, 215, 215), -1px -1px 5px rgb(215, 215, 215);
+  width: 500px;
+}
+
+.tweet.profile.image {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  background: gray;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.tweet.name {
+  grid-column: 3 / 8;
+  grid-row: 1 / 2;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.tweet.username {
+  grid-column: 3 / 8;
+  grid-row: 2 / 3;
+  margin: 0;
+  color: gray;
+}
+
+.tweet.message {
+  grid-column: 2 / 15;
+  grid-row: 5 / 6;
+  font-family: 'Georgia';
+}
+
+.tweet.date {
+  grid-column: 1 / 3;
+  grid-row: 7 / 8;
+  color: gray;
+}
+
+.tweet.actions {
+  grid-column: 10 / 16;
+  grid-row: 7 / 8;
+  color: gray;
+}
+
+.tweet.actions a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tweet.subscribe.button {
+  grid-column: 14 / 16;
+  left: 25px;
+}
+
+.tweet.subscribe.button button {
+  background: linear-gradient(rgb(239, 239, 239) 80%, rgb(197, 197, 197));
+  border: 0;
+  padding: 5px;
+}
+
+.person.container {
+  font-size: 12pt;
+}
+.person.container span {
+  font-weight: normal;
+}
